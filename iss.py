@@ -38,7 +38,7 @@ def worldMap(geo_info):
     ts = turtle.Screen()
     ts.register_shape("iss.gif")
     ts.setup(720,360)
-    ts.setworldcoordinates(-180,-80,180,80)
+    ts.setworldcoordinates(-180,-90,180,90)
     ts.bgpic("map.gif")
     shelly = turtle.Turtle(shape="iss.gif")
     shelly.color("yellow")
@@ -46,8 +46,9 @@ def worldMap(geo_info):
 
     # Make a dot over Indianapolis
 
-    shelly.goto(-86.1581, 39.7684 )
+    shelly.goto(-86.1581, 39.7684)
     shelly.dot(size=8)
+    shelly.color("black")
     shelly.write(passoverTime)
 
 
